@@ -1,6 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import { useStore } from "./store";
+import "./style.css";
 
 function Form() {
     const store = useStore();
@@ -19,28 +20,40 @@ function Form() {
 
     return (
         <form onSubmit={onLogin}>
-            <label>Username:</label>
-            <input
-                type="text"
-                placeholder="CoolGuy1234"
-                {...store.model.username()}
-            />
+            <div className="field">
+                <h3>Test Form (submit and check console):</h3>
+            </div>
 
-            <label>Email:</label>
-            <input
-                type="email"
-                placeholder="coolguy1234@gmail.io"
-                {...store.model.email()}
-            />
+            <div className="field">
+                <label>Username:</label>
+                <input
+                    type="text"
+                    placeholder="CoolGuy1234"
+                    {...store.model.username()}
+                />
+            </div>
 
-            <label>Password:</label>
-            <input
-                type="password"
-                placeholder="Shhhhhhhhh!"
-                {...store.model.password()}
-            />
+            <div className="field">
+                <label>Email:</label>
+                <input
+                    type="email"
+                    placeholder="coolguy1234@gmail.io"
+                    {...store.model.email()}
+                />
+            </div>
 
-            <button type="submit">Signup!</button>
+            <div className="field">
+                <label>Password:</label>
+                <input
+                    type="password"
+                    placeholder="Shhhhhhhhh!"
+                    {...store.model.password()}
+                />
+            </div>
+
+            <div className="field">
+                <button type="submit">Signup!</button>
+            </div>
         </form>
     );
 }
