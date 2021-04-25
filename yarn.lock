@@ -9683,6 +9683,11 @@ send@0.17.1:
     range-parser "~1.2.1"
     statuses "~1.5.0"
 
+senko@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/senko/-/senko-1.1.0.tgz#0c19eed23c4b51cd40d5c50ae019f09606b238f3"
+  integrity sha512-WzyFQrnUPtMrDIzG98EXgqiKtmJgj5zwjCUyCaJQvnYVCG7cDTGD9tUzgYjP804bQn7E2Yo0+Ap7krL/Kuc1RQ==
+
 serialize-javascript@^4.0.0:
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/serialize-javascript/-/serialize-javascript-4.0.0.tgz#b525e1238489a5ecfc42afacc3fe99e666f4b1aa"
